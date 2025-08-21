@@ -9,6 +9,10 @@ Then, run:
 
 nix-shell -p git --command "git clone https://github.com/alex-kumpula/pinned-nix-configs.git ~/Documents"
 
-Then:
+Then, run:
 
-sudo nixos-rebuild switch --flake .#mainHost
+nix-shell -p git --command "sudo nixos-rebuild switch --flake .#your-host-name-here"
+
+Then, run:
+
+home-manager --flake .#alex
