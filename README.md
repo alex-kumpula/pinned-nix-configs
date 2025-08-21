@@ -1,5 +1,7 @@
 NOTE: Make sure to change hardware config and set boot to efi in virtual box!!!
 
+NOTE: If running in a vm, make sure 3D acceleration is enabled in the vm settings, otherwise Niri wont work and will just show a black screen!
+
 
 First, run:
 
