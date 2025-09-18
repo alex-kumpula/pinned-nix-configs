@@ -98,11 +98,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1758158251,
-        "narHash": "sha256-aUic68Fnc0pCw7VnppgsMVNdCGG1ii+Her7+rIKMMLI=",
+        "lastModified": 1758160457,
+        "narHash": "sha256-wvmlk/xl9FwEG3tz6Jf6/+OfTHei/ASDOlAu9O1rf7M=",
         "owner": "alex-kumpula",
         "repo": "system-config",
-        "rev": "2e45e114b88d5374f8eb55e422d0fd0e3f060042",
+        "rev": "c035be82c6171ee3ca13473e4eb63bd18bb7e6df",
         "type": "github"
       },
       "original": {
