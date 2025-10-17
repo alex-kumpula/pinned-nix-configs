@@ -42,24 +42,25 @@
     home.inputs.home-manager.follows = "home-manager";
   };
 
-  outputs = { self, nixpkgs, home-manager, system, home, ... }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, system, home, ... }:
   let
-    # Our shared module to inject into all homeConfigurations
     sharedModule = {
       home.file.".shared.txt".text = ''
-        Hello! This file is included for every user by the combined flake.
+        Hello! This file comes from the combined flake.
       '';
     };
 
-    # Helper function that extends every imported home configuration
-    extendHomeConfig = name: cfg:
-      cfg // {
-        modules = cfg.modules ++ [ sharedModule ];
+    # Rebuild each homeConfiguration by extending its module list
+    rebuildHomeConfig = name: origCfg:
+      home-manager.lib.homeManagerConfiguration {
+        pkgs = origCfg.pkgs;
+        extraSpecialArgs = origCfg.extraSpecialArgs or {};
+        modules = (origCfg.modules or []) ++ [ sharedModule ];
       };
   in {
     nixosConfigurations = system.nixosConfigurations;
 
-    homeConfigurations =
-      builtins.mapAttrs extendHomeConfig home.homeConfigurations;
+    # Map over all imported homeConfigurations
+    homeConfigurations = builtins.mapAttrs rebuildHomeConfig home.homeConfigurations;
   };
 }
