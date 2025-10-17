@@ -22,7 +22,6 @@
 #     homeConfigurations = home.homeConfigurations;
 #   };
 # }
-
 {
   description = "Common flake to unify nixpkgs for system + home";
 
@@ -42,7 +41,7 @@
     home.inputs.home-manager.follows = "home-manager";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, system, home, ... }:
+  outputs = { self, nixpkgs, home-manager, system, home, ... }:
   let
     sharedModule = {
       home.file.".shared.txt".text = ''
@@ -50,17 +49,20 @@
       '';
     };
 
-    # Rebuild each homeConfiguration by extending its module list
     rebuildHomeConfig = name: origCfg:
       home-manager.lib.homeManagerConfiguration {
-        pkgs = origCfg.pkgs;
-        extraSpecialArgs = origCfg.extraSpecialArgs or {};
-        modules = (origCfg.modules or []) ++ [ sharedModule ];
+        inherit (origCfg) pkgs extraSpecialArgs;
+        # preserve modules + add shared one
+        modules = (origCfg.modules or []) ++ [
+          sharedModule
+          # ensure home.stateVersion exists if not set in user config
+          ({ config, ... }: {
+            home.stateVersion = config.home.stateVersion or "25.05";
+          })
+        ];
       };
   in {
     nixosConfigurations = system.nixosConfigurations;
-
-    # Map over all imported homeConfigurations
     homeConfigurations = builtins.mapAttrs rebuildHomeConfig home.homeConfigurations;
   };
 }
