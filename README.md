@@ -17,4 +17,4 @@ nix-shell -p git --command "sudo nixos-rebuild switch --flake .#your-host-name-h
 
 Then, run:
 
-home-manager --flake .#alex
+nix-shell -p home-manager --command "home-manager switch --flake .#your-home-name-here"
