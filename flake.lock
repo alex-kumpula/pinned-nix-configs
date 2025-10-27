@@ -126,11 +126,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1760692801,
-        "narHash": "sha256-lEfQhiIvksMRde7UJxTeaNhKmRzc9+rxR7pGd6qIXNg=",
+        "lastModified": 1761606831,
+        "narHash": "sha256-GlXCREcKzf1twwH9+L5RS0RWWokTqaBKx+Pys3tVwn8=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "9d148d80a51360ee96060a08f37d48087369244d",
+        "rev": "d40428163d464f4884bf9e8ca140d22796c14230",
         "type": "github"
       },
       "original": {
@@ -286,11 +286,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1760693000,
-        "narHash": "sha256-38JkuFxrNcuMekhqMVLTE0WjbQqHZ8Frz1RNQjvRLz8=",
+        "lastModified": 1761606837,
+        "narHash": "sha256-GcVUcC90RhAC/bNQY2cVsYLRrSCCcqVhS7SREWZrKoQ=",
         "owner": "alex-kumpula",
         "repo": "system-config",
-        "rev": "33240b23c14766af8c9724ef1e24d76117a329bf",
+        "rev": "be73a53a9c314b31d9c06a53ffd8638ec3c62269",
         "type": "github"
       },
       "original": {
