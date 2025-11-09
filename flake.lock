@@ -12,11 +12,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1762466582,
-        "narHash": "sha256-1jbV0zdGt4gszZJtO7NlqwngXcprgr2g4PmxmO3zs34=",
+        "lastModified": 1762586244,
+        "narHash": "sha256-po6o2DqL4WcTzKR3xGf2djajkKNipeQEFVPiaSwjGmg=",
         "owner": "mrshmllow",
         "repo": "affinity-nix",
-        "rev": "138edd2e20f6ceab19de29c4b017b2a14f446da1",
+        "rev": "a71b769b0a5d53b15ea9df0f5ed37280f82575e3",
         "type": "github"
       },
       "original": {
@@ -35,11 +35,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762564068,
-        "narHash": "sha256-IWrXHGg5fgUDRyDk+H2PYXvIzscuHgdgMJT6SJrqfqw=",
+        "lastModified": 1762659541,
+        "narHash": "sha256-oJRlu5+jldKUYe2XbnV4cJdTdTFAks0lHrqwqYamqXc=",
         "owner": "AvengeMedia",
         "repo": "DankMaterialShell",
-        "rev": "c8fcf50095d8f1c8b9317d8cc750b158d7e82da8",
+        "rev": "0ea7de12a5241be78ccab3f1bc36d75450f35703",
         "type": "github"
       },
       "original": {
@@ -217,11 +217,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762573706,
-        "narHash": "sha256-tuMWG4sBkGSFXwFA72m1ERRiWzYfcYO9pAAUB+Kgoeg=",
+        "lastModified": 1762676193,
+        "narHash": "sha256-zog0YDhOauR5MUoyOGGEY77pOYGVrXlP1bi4CUqIAv8=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "1489b053082b1ee2a9a4df141a68854ccf745c0c",
+        "rev": "7dc4ed20bebbdedba4a5199fba5c85732d464737",
         "type": "github"
       },
       "original": {
