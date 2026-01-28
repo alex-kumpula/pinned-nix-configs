@@ -219,11 +219,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1769545940,
-        "narHash": "sha256-rjmhXSV0HXl0yhPNo2Es2hn2Wa8EUN/4/zviJHpIc+c=",
+        "lastModified": 1769574372,
+        "narHash": "sha256-n1jQCOdoW1l1WvbiP6wKML8pFi6iNSuTvAcQ0grhB9U=",
         "owner": "alex-kumpula",
         "repo": "home-config",
-        "rev": "c6e9adbd6e7af084284ecdcc76f5ad6ace10e83f",
+        "rev": "2a261a81f8f1e92ddd3594c96798d04597a73a14",
         "type": "github"
       },
       "original": {
