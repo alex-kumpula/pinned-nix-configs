@@ -279,29 +279,6 @@
         "type": "github"
       }
     },
-    "niri-git": {
-      "inputs": {
-        "nixpkgs": [
-          "system",
-          "nixpkgs"
-        ],
-        "rust-overlay": "rust-overlay"
-      },
-      "locked": {
-        "lastModified": 1773732451,
-        "narHash": "sha256-ky0eBF/zoiJTIoLSpV1EmupVCEZMSp9pQIlHOpvDoMU=",
-        "owner": "niri-wm",
-        "repo": "niri",
-        "rev": "17577e7db0e530d56e74ec244a185cdd1b9ad6cc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "niri-wm",
-        "ref": "wip/branch",
-        "repo": "niri",
-        "type": "github"
-      }
-    },
     "niri-stable": {
       "flake": false,
       "locked": {
@@ -545,31 +522,8 @@
         "system": "system"
       }
     },
-    "rust-overlay": {
-      "inputs": {
-        "nixpkgs": [
-          "system",
-          "niri-git",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1757989933,
-        "narHash": "sha256-9cpKYWWPCFhgwQTww8S94rTXgg8Q8ydFv9fXM6I8xQM=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "8249aa3442fb9b45e615a35f39eca2fe5510d7c3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
     "system": {
       "inputs": {
-        "niri-git": "niri-git",
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -578,11 +532,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773793102,
-        "narHash": "sha256-5ggFF0Lg68hjp+Ab2endGDogctxcUCAw02D3OFLcl+Q=",
+        "lastModified": 1773793790,
+        "narHash": "sha256-lRxEUCly5jYYNlvHXqS/clJALsGm19J7O7srVwS7SOk=",
         "owner": "alex-kumpula",
         "repo": "system-config",
-        "rev": "eabe7249cf899508fdb392c0b51d0e9f0607d060",
+        "rev": "797e1e813d651dea63deda2ede834f00ee3f1efc",
         "type": "github"
       },
       "original": {
